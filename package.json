@@ -1,0 +1,26 @@
+{
+  "name": "template-node-ts",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "./src/index.js",
+  "author": {
+    "name": "Edixon Alberto",
+    "email": "edixonalbertto@gmail.com"
+  },
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node ./src",
+    "start": "nodemon -e ts -w ./src --exec \"yarn run dev\""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^13.7.4",
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.2",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.8.2"
+  }
+}
