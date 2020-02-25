@@ -10,4 +10,4 @@
 
 ### Screenshots
 
-![image](./docs/image.png)
+![image](./docs/template.png)
