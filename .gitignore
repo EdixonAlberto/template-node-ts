@@ -1,5 +1,8 @@
+# Folders
 node_modules/
-.vscode
+.vscode/
+dist/
+
+# Files
 .env
 *.log
-dist/
