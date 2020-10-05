@@ -10,9 +10,9 @@ Basic template to start a project using nodejs with typescript
 ```sh
 yarn install
 
-yarn start
-yarn dev
-yarn build
+yarn run dev # run app in mode developer
+yarn run build # build app
+yarn start # run app in mode production
 ```
 
 ### Screenshots

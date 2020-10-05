@@ -1,6 +1,6 @@
 {
   "name": "template-node-ts",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Basic template to start a project using nodejs with typescript",
   "keywords": [
     "template",
@@ -15,11 +15,10 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "dev": "ts-node -r ./src",
-    "start:dev": "nodemon -e ts -w ./src --exec \"yarn run dev\"",
     "lint": "prettier --write ./src/**/*.ts",
+    "dev": "nodemon -e ts -w ./src --exec \"ts-node src\"",
     "build": "tsc",
-    "start": ""
+    "start": "node dist/src"
   },
   "dependencies": {},
   "devDependencies": {
@@ -28,10 +27,10 @@
     "nodemon": "^2.0.2",
     "prettier": "^1.19.1",
     "ts-node": "^8.6.2",
-    "typescript": "^3.8.2"
+    "typescript": "4.0.3"
   },
   "engines": {
-    "node": "12.13.0",
-    "yarn": "1.19.1"
+    "node": "^12.18.0",
+    "yarn": "^1.22.5"
   }
 }

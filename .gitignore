@@ -1,6 +1,7 @@
 # Folders
 node_modules/
-.vscode/
+# Eliminar este comentario para descartar el folder .vscode
+# .vscode/
 dist/
 
 # Files
