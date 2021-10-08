@@ -1,13 +1,10 @@
-import { loadConfig } from './utils/loadConfig';
-import { endpoints } from '@ENUM';
+import { loadConfig } from '~UTILS/loadConfig';
 
 async function main() {
   try {
     await loadConfig();
-
-    console.log(endpoints.API);
   } catch (error) {
-    console.error(error);
+    console.error('>>ERROR:', (error as Error).message);
   }
 }
 

@@ -1,13 +1,9 @@
-# Folders
+# FOLDERS
 node_modules/
-# Eliminar este comentario para descartar el folder .vscode
-# .vscode/
+# .vscode/ Remove this comment to ignore the folder .vscode/
 dist/
 
-# Files
+# FILES
 .env
 *.log
 Procfile
-
-# Remove Later
-yarn.lock

@@ -7,30 +7,39 @@
     "node",
     "typescript"
   ],
-  "main": "dist/src/index.js",
-  "author": {
-    "name": "Edixon Alberto",
-    "email": "edixonalbertto@gmail.com"
-  },
-  "license": "MIT",
   "private": false,
+  "license": "MIT",
+  "author": {
+    "name": "Edixon Piña",
+    "email": "edixonalbertto@gmail.com",
+    "url": "https://edixonalberto.com"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "lint": "prettier --write ./src/**/*.ts",
-    "dev": "nodemon -e ts -w ./src --exec \"ts-node src\"",
-    "build": "tsc",
-    "start": "node dist/src"
+    "alias-install": "link-module-alias",
+    "alias-clean": "link-module-alias clean || true",
+    "dev": "nodemon -e ts -w src --exec \"yarn build && yarn start\"",
+    "build": "tsc --build",
+    "start": "yarn alias-install && node dist"
   },
-  "dependencies": {},
+  "_moduleAliases": {
+    "~UTILS": "dist/utils"
+  },
+  "dependencies": {
+    "link-module-alias": "^1.2.0"
+  },
   "devDependencies": {
     "@types/node": "^13.7.4",
     "dotenv": "^8.2.0",
     "nodemon": "^2.0.2",
     "prettier": "^1.19.1",
-    "ts-node": "^8.6.2",
-    "typescript": "4.0.3"
+    "typescript": "^4.4.3"
   },
-  "engines": {
-    "node": "^12.18.0",
-    "yarn": "^1.22.5"
+  "homepage": "https://github.com/EdixonAlberto/template-node-ts#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EdixonAlberto/template-node-ts/tree/main"
   }
 }
