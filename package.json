@@ -15,31 +15,27 @@
     "url": "https://edixonalberto.com"
   },
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
   "scripts": {
     "lint": "prettier --write ./src/**/*.ts",
-    "alias-install": "link-module-alias",
-    "alias-clean": "link-module-alias clean || true",
-    "dev": "nodemon -e ts -w src --exec \"yarn build && yarn start\"",
-    "build": "tsc --build",
-    "start": "yarn alias-install && node dist"
-  },
-  "_moduleAliases": {
-    "~UTILS": "dist/utils"
-  },
-  "dependencies": {
-    "link-module-alias": "^1.2.0"
+    "build": "tsc && tsc-alias",
+    "dev": "nodemon -e ts -w src --exec \"yarn start\"",
+    "start": "yarn build && node dist"
   },
   "devDependencies": {
     "@types/node": "^13.7.4",
     "dotenv": "^8.2.0",
     "nodemon": "^2.0.2",
     "prettier": "^1.19.1",
+    "tsc-alias": "^1.4.1",
     "typescript": "^4.4.3"
   },
   "homepage": "https://github.com/EdixonAlberto/template-node-ts#readme",
   "repository": {
     "type": "git",
     "url": "https://github.com/EdixonAlberto/template-node-ts/tree/main"
+  },
+  "engine": {
+    "node": "~16.13.0",
+    "yarn": "~1.22.5"
   }
 }
