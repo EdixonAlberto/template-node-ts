@@ -35,20 +35,15 @@
     "@types/node": "^16.11.11",
     "cross-env": "^7.0.3",
     "dotenv": "^8.2.0",
+    "husky": "^7.0.4",
     "lint-staged": "^12.1.2",
     "nodemon": "^2.0.15",
     "prettier": "^1.19.1",
     "tsc-alias": "^1.4.1",
     "typescript": "^4.5.2"
   },
-  "gitHooks": {
-    "pre-commit": "lint-staged"
-  },
   "lint-staged": {
-    "*.{ts}": [
-      "yarn lint",
-      "git add"
-    ]
+    "*.ts": "yarn lint"
   },
   "homepage": "https://github.com/EdixonAlberto/template-node-ts#readme",
   "repository": {
