@@ -1,11 +1,9 @@
 type TConfig = {
-  port: number;
-};
-
-/************************************ DECLARATIONS **************************************/
-
-declare namespace NodeJS {
-  interface Global {
-    config: TConfig;
-  }
+  port: number
 }
+
+type TEnv = 'development' | 'production'
+
+/* DECLARATIONS _____________________________________________________________________________________________________ */
+
+declare var config: TConfig

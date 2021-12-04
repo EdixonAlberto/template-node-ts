@@ -1,7 +1,5 @@
 # FOLDERS
 node_modules/
-#Remove this comment to ignore the folder .vscode/
-.vscode/
 dist/
 
 # FILES

@@ -1,11 +1,11 @@
-import { loadConfig } from '~UTILS/loadConfig';
+import { loadConfig } from '~UTILS/config.util'
 
 async function main() {
   try {
-    await loadConfig();
+    await loadConfig()
   } catch (error) {
-    console.error('>>ERROR:', (error as Error).message);
+    console.error((error as Error).message)
   }
 }
 
-main();
+main()

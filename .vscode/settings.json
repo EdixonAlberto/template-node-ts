@@ -4,7 +4,9 @@
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "typescript.tsdk": "node_modules\\typescript\\lib",
-  "typescript.preferences.importModuleSpecifier": "non-relative",
-  "discord.enabled": true
+  "typescript.preferences.importModuleSpecifier": "non-relative"
 }

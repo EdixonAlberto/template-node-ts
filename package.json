@@ -18,16 +18,37 @@
   "scripts": {
     "lint": "prettier --write ./src/**/*.ts",
     "build": "tsc && tsc-alias",
-    "dev": "nodemon -e ts -w src --exec \"yarn start\"",
+    "dev": "cross-env NODE_ENV=development nodemon --config",
     "start": "yarn build && node dist"
   },
+  "nodemonConfig": {
+    "ext": ".ts,.env",
+    "watch": [
+      "src",
+      "env"
+    ],
+    "verbose": false,
+    "exec": "yarn build && node dist"
+  },
+  "dependencies": {},
   "devDependencies": {
-    "@types/node": "^13.7.4",
+    "@types/node": "^16.11.11",
+    "cross-env": "^7.0.3",
     "dotenv": "^8.2.0",
-    "nodemon": "^2.0.2",
+    "lint-staged": "^12.1.2",
+    "nodemon": "^2.0.15",
     "prettier": "^1.19.1",
     "tsc-alias": "^1.4.1",
-    "typescript": "^4.4.3"
+    "typescript": "^4.5.2"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{ts}": [
+      "yarn lint",
+      "git add"
+    ]
   },
   "homepage": "https://github.com/EdixonAlberto/template-node-ts#readme",
   "repository": {
