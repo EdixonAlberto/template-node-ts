@@ -1,9 +1,6 @@
 type TConfig = {
-  port: number
+  portHttp: number
+  debug: boolean
 }
 
 type TEnv = 'development' | 'production'
-
-/* DECLARATIONS _____________________________________________________________________________________________________ */
-
-declare var config: TConfig
