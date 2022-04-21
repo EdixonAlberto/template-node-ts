@@ -1,7 +1,7 @@
 {
   "name": "template-node-ts",
   "version": "0.0.1",
-  "description": "Basic template to start a project using nodejs with typescript",
+  "description": "Template to create any type of service using Nodejs with TypeScript",
   "keywords": [
     "template",
     "node",

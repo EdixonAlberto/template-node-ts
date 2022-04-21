@@ -11,9 +11,9 @@
     "baseUrl": "src",
     "paths": {
       "@UTILS": ["utils/index.ts"],
+      "@MIDDLEWARES": ["middlewares/index.ts"],
       "@ROUTES/*": ["routes/*"],
       "@ENTITIES/*": ["entities/*"],
-      "@MIDDLEWARES": ["middlewares/index.ts"],
       "@SERVICES/*": ["services/*"],
     },
     "esModuleInterop": true,

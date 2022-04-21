@@ -1,7 +1,10 @@
 # FOLDERS
 node_modules/
 dist/
+build/
+# .vscode/
 
 # FILES
+*.env
 *.log
 Procfile
